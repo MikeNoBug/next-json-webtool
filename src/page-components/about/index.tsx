@@ -1,15 +1,14 @@
-"use client";
+'use client';
 
-import { Button } from "antd";
+import { Button } from 'antd';
 
 const ClientAbout: React.FC = () => {
   return (
     <Button
-      type="primary"
+      type='primary'
       onClick={() => {
-        console.log("test");
-      }}
-    >
+        console.log('test');
+      }}>
       test
     </Button>
   );
