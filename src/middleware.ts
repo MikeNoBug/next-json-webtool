@@ -5,7 +5,6 @@ import type { NextRequest } from 'next/server';
 export function middleware(request: NextRequest) {
   const url = request.nextUrl.clone();
   const path = url.pathname;
-  console.log('wq_1', path);
   const response = NextResponse.next();
   response.headers.set('X-Current-Path', path);
 
