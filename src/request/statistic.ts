@@ -10,8 +10,8 @@ interface CountRes {
 }
 
 export async function saveStatics(params?: SaveStaticsParams): PyPromise<null> {
-  return await request('/statistic/save', params, 'GET');
+  return await request('/api/statistic', params, 'POST');
 }
 export async function getStaticsCount(): PyPromise<CountRes> {
-  return await request<CountRes>('/statistic/getCount', undefined, 'GET');
+  return await request<CountRes>('/api/statistic', undefined, 'GET');
 }

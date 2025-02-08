@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 axios.defaults.timeout = 60000;
-axios.defaults.baseURL = 'https://jsonwebtool.com/api';
+axios.defaults.baseURL = process.env.FETCHURL;
 
 export async function request<T>(url = '', params = {}, type = 'POST'): PyPromise<T> {
   try {
