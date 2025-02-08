@@ -1,5 +1,5 @@
 'use client';
-import { useMemoizedFn, useMount } from 'ahooks';
+import { useMemoizedFn } from 'ahooks';
 import { Button, Checkbox, Input } from 'antd';
 import { useRef, useState } from 'react';
 import { parse } from './jsonParse';
@@ -14,9 +14,6 @@ const JsonParse: React.FC = () => {
   const [sortFlag, setSortFlag] = useState(false);
   const [showTransfer, setShowTransfer] = useState(true);
   const changeTimer = useRef(0);
-  useMount(() => {
-    document.title = 'JSON在线解析';
-  });
   const handleJsonStrChange = useMemoizedFn((e) => {
     const value = e.target.value;
     setJsonStr(value);
