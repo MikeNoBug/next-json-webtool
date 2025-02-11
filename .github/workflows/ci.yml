@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Checkout Code
-        run: git pull
+        run: sudo git pull
         working-directory: /home/ubuntu/next-json-webtool/next-json-webtool # 指定你的项目路径
 
       - name: Install Dependencies
