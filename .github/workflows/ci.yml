@@ -8,18 +8,19 @@ on:
 jobs:
   deploy:
     runs-on: self-hosted
-    defaults:
-      run:
-        working-directory: ../../next-json-webtool/next-json-webtool
+
     steps:
       - name: Checkout Code
         uses: actions/setup-node@v4
+        working-directory: ../../next-json-webtool/next-json-webtool
 
       - name: Install Dependencies
         run: npm install
+        working-directory: ../../next-json-webtool/next-json-webtool
 
       - name: Build
         run: npm run build
+        working-directory: ../../next-json-webtool/next-json-webtool
 
       - name: Restart Server
         run: pm2 restart all
