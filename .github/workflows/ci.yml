@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Checkout Code
-        uses: actions/setup-node@v4
+        run: git pull
         working-directory: ../../next-json-webtool/next-json-webtool
 
       - name: Install Dependencies
