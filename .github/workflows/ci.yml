@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: VM-4-6-ubuntu]
+    runs-on: self-hosted
     steps:
       - name: Checkout Code
         uses: actions/setup-node@v4
