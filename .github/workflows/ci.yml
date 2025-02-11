@@ -12,15 +12,15 @@ jobs:
     steps:
       - name: Checkout Code
         run: git pull
-        working-directory: ../../next-json-webtool/next-json-webtool
+        working-directory: /home/ubuntu/next-json-webtool/next-json-webtool # 指定你的项目路径
 
       - name: Install Dependencies
         run: npm install
-        working-directory: ../../next-json-webtool/next-json-webtool
+        working-directory: /home/ubuntu/next-json-webtool/next-json-webtool # 指定你的项目路径
 
       - name: Build
         run: npm run build
-        working-directory: ../../next-json-webtool/next-json-webtool
+        working-directory: /home/ubuntu/next-json-webtool/next-json-webtool # 指定你的项目路径
 
       - name: Restart Server
         run: pm2 restart all
