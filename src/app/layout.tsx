@@ -13,7 +13,7 @@ export default async function RootLayout({
     <html lang='en'>
       <body style={{ background: '#f5f5f5' }} className='col-start-start w-full'>
         <div className='bg-white h-52 row-start-center px-md w-full'>
-          <div className='text-4xl font-bold'>JSON Parse</div>
+          <div className='text-4xl font-bold'>JSON Parse11</div>
           <Statistic></Statistic>
           <div className='flex-1'></div>
           <NavBar></NavBar>
